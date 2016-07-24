@@ -40,9 +40,31 @@ body {
 
 .dash-board .progress {
   position: absolute;
+  width: 4.906667rem;
+  height: 3.226667rem;
+  transition: .5s;
+  border-radius: 2.453333rem 2.453333rem 0 0;
+  overflow: hidden;
+}
+
+.mask, .fill {
+  position: absolute;
+  width: 6.453333rem;
+  height: 6.453333rem;
+  left: -0.773333rem;
+  border-radius: 50%;
+  -webkit-backface-visibility: hidden;
+}
+
+.mask {
+  clip: rect(0px, 6.453333rem, 3.226667rem, 0px);
+}
+
+.mask .fill {
+  left: 0;
+  clip: rect(3.226667rem, 6.453333rem, 6.453333rem, 0px);
+  transition: transform .5s;
   background-image:linear-gradient(-55deg, #3d95eb 0%, #ffffff 100%);
-  width: 100%;
-  height: 100%;
 }
 
 .dash-board img {
