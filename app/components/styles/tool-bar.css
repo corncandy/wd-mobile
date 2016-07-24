@@ -1,0 +1,33 @@
+.tool-bar {
+  margin-top: 0.266667rem;
+  height: 2.346667rem;
+}
+
+.tool-bar li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+  padding: 0.48rem 0;
+}
+
+.tool-bar li:last-child {
+  border-right: none;
+}
+
+.tool-bar li img {
+  height: 0.746667rem;
+}
+
+.tool-bar li p {
+  margin-top: 0.266667rem;
+  font-size: 0.32rem;
+  color: #222222;
+}
+
+.tool-bar li.disabled p {
+  color: #999999;
+}
+

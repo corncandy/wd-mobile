@@ -19,15 +19,16 @@
   <link rel="stylesheet" href="../vendors/styles/reset.css">
   <!-- Common Style -->
   <link rel="stylesheet" href="../styles/common.css">
+  <!-- Internal Components -->
+  <link rel="stylesheet" href="../components/styles/nav-bar.css">
+  <link rel="stylesheet" href="../components/styles/tool-bar.css">
+  <link rel="stylesheet" href="../components/styles/tab-bar.css">
   <!-- Page Style -->
   <link rel="stylesheet" href="../styles/sample/sample-page.css">
 </head>
 
 <body>
-  <nav class="nav-bar">
-    信用生活
-    <span class="login-btn">登录</span>
-  </nav>
+  <nav class="nav-bar"></nav>
   <section class="dash-panel">
     <div class="dash-board">
       <div class="progress">
@@ -53,51 +54,20 @@
       提升公分
     </div>
   </section>
-  <section class="tool-bar">
-    <ul>
-      <li>
-        <img src="../images/sample/sample-page-timeline@2x.png" />
-        <p>时光刻度</p>
-      </li>
-      <li>
-        <img src="../images/sample/sample-page-salary@2x.png" />
-        <p>工资测评</p>
-      </li>
-      <li class="disabled">
-        <img src="../images/sample/sample-page-phone@2x.png" />
-        <p>手机号估值</p>
-      </li>
-      <li class="disabled">
-        <img src="../images/sample/sample-page-developing@2x.png" />
-        <p>开发中</p>
-      </li>
-    </ul>
-  </section>
-  <section class="tab-bar">
-    <ul>
-      <li>
-        <img src="../images/sample/sample-page-person@2x.png" />
-        <p>查个人</p>
-      </li>
-      <li>
-        <img src="../images/sample/sample-page-company@2x.png" />
-        <p>查企业</p>
-      </li>
-      <li class="active">
-        <img src="../images/sample/sample-page-life@2x.png" />
-        <p>信用生活</p>
-      </li>
-      <li>
-        <img src="../images/sample/sample-page-mine@2x.png" />
-        <p>我的</p>
-      </li>
-    </ul>
-  </section>
+  <section class="tool-bar"></section>
+  <section class="tab-bar"></section>
   <!-- Library -->
   <script src="../vendors/scripts/zepto.min.js"></script>
   <script src="../vendors/scripts/fastclick.js"></script>
+  <script src="../vendors/scripts/handlebars.runtime.min.js"></script>
+  <!-- Handlebars templates -->
+  <script src="../scripts/templates.js"></script>
   <!-- Common Logic -->
   <script src="../scripts/common.js"></script>
+  <!-- Internal Components -->
+  <script src="../components/scripts/nav-bar.js"></script>
+  <script src="../components/scripts/tool-bar.js"></script>
+  <script src="../components/scripts/tab-bar.js"></script>
   <!-- Page Logic -->
   <script src="../scripts/sample/sample-page.js"></script>
 </body>

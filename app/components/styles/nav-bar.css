@@ -1,0 +1,17 @@
+.nav-bar {
+  position: relative;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 0.48rem;
+  height: 1.173333rem;
+  line-height: 1.173333rem;
+  background: #4d85cd;
+}
+
+.nav-bar .right-button {
+  position: absolute;
+  right: 0.4rem;
+  color: #FFFFFF;
+  font-size: 0.373333rem;
+}
+
