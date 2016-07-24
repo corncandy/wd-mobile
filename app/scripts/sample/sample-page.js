@@ -1,17 +1,19 @@
 'use strict';
 
 $(function() {
-  var total = 950;
-  var current = 0;
+  var low = 350;
+  var high = 950;
+  var amount = 600;
+  var current = 350;
   var $progress = $('.progress .fill');
-  var $point = $('.point-value');
+  var $point = $('.point-value').text(current);
 
   $('.raise-button').click(function() {
     current += 50;
-    if (current > 950) {
-      current = 0;
+    if (current > high) {
+      current = low;
     }
-    $progress.css('transform', 'rotate(' + current * 180 / 950 + 'deg)');
+    $progress.css('transform', 'rotate(' + (current - 350) * 180 / amount + 'deg)');
     $point.text(current);
   });
 });
